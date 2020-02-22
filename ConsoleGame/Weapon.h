@@ -15,6 +15,7 @@ public:
 
 	Weapon();
 	Weapon(string, int, int); //Additional parameters should be added here for other weapon stats added
+	//Additional Constructors for the other weapon types like bows. etc.
 	~Weapon();
 
 	int getItemPrice();

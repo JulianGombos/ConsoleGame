@@ -45,7 +45,6 @@ int main() {
 	gameShop->fillShopItems();
 	gameShop->displayShopItems();
 	Statics::pause();
-	Statics::pause();
 	//********************************************************************
 
 	player = startup();

@@ -7,6 +7,10 @@ class Armor : public BuyItem {
 
 private:
 
+	//Inherited members
+	//int itemPrice
+	//string itemName
+
 	int defenseModifier;
 	int speedModifier;
 
@@ -19,5 +23,8 @@ public:
 	int getDefenseModifier();
 	int getSpeedModifier();
 
+	//Inherited pure virtual functions
+	int getItemPrice();
+	string getItemName();
 
 };

@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Armor.cpp" />
+    <ClCompile Include="BattleTools.cpp" />
     <ClCompile Include="BuyItem.cpp" />
     <ClCompile Include="ClassBase.cpp" />
     <ClCompile Include="Engine.cpp" />
@@ -123,6 +124,7 @@
     <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="player.cpp" />
+    <ClCompile Include="Potion.cpp" />
     <ClCompile Include="Shop.cpp" />
     <ClCompile Include="StaticsLibrary.cpp" />
     <ClCompile Include="Warrior.cpp" />
@@ -130,12 +132,14 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Armor.h" />
+    <ClInclude Include="BattleTools.h" />
     <ClInclude Include="BuyItem.h" />
     <ClInclude Include="ClassBase.h" />
     <ClInclude Include="Engine.h" />
     <ClInclude Include="GlobalResources.h" />
     <ClInclude Include="Inventory.h" />
     <ClInclude Include="player.h" />
+    <ClInclude Include="Potion.h" />
     <ClInclude Include="Shop.h" />
     <ClInclude Include="StaticsLibrary.h" />
     <ClInclude Include="Warrior.h" />

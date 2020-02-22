@@ -3,23 +3,135 @@ Iron Sword
 1000
 10
 W
-Diamond Sword
-12000
-25
+Steel Sword
+3000
+18
 W
 Dragon Sword
-21000
-40
+5500
+25
 W
 Iron Spear
-1250
+1100
 12
 W
+Steel Spear
+3300
+16
+W
+Dragon Spear
+5800
+26
+W
 Iron Axe
-1100
+1200
+11
+W
+Steel Axe
+3200
+17
+W
+Dragon Axe
+6000
+28
+W
+Wood Bow
+1000
+12
+W
+Reinforced Bow
+3200
+19
+W
+Compound Bow
+5500
+28
+W
+Wood Crossbow
+1300
 15
+W
+Reinforced Crossbow
+3500
+21
+W
+Compound Crossbow
+6200
+31
+W
+Wood Staff
+1000
+16
+W
+Enchanted Staff
+3100
+23
+W
+Royal Staff
+6000
+33
 A
 Iron Breastplate
 1600
 20
 -10
+A
+Steel Breastplate
+3800
+35
+-20
+A
+Dragon Breastplate
+6400
+48
+-30
+A
+Leather Chestpiece
+1500
+15
+-6
+A
+Hardened Leather Chestpiece
+3600
+22
+-12
+A
+Studded Leather Chestpiece
+6400
+28
+-18
+A
+Robes
+1500
+5
+-2
+A
+Enchanted Robes
+3900
+10
+-4
+A
+Royal Robes
+6500
+15
+-6
+P
+Basic Health Potion
+100
+20
+P
+Good Health Potion
+500
+50
+P
+Superior Health Potion
+1000
+100
+B
+Bomb
+500
+30
+B
+Greater Bomb
+1500
+80

@@ -30,3 +30,13 @@ int Armor::getSpeedModifier()
 {
 	return speedModifier;
 }
+
+int Armor::getItemPrice()
+{
+	return itemPrice;
+}
+
+string Armor::getItemName()
+{
+	return itemName;
+}

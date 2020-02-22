@@ -1,0 +1,50 @@
+BuyItems
+-------------------------------------------------------
+_______________________________________________________
+Weapons (These will probably need speed modifiers added)
+(Price) (Attack Modifier)
+_______________________________________________________
+Iron Sword 1000 10
+Steel Sword 3000 18
+Dragon Sword 5500 25
+Iron Spear 1100 12
+Steel Spear 3300 16
+Dragon Spear 5800 26
+Iron Axe 1200 11
+Steel Axe 3200 17
+Dragon Axe 6000 28
+Wood Bow 1000 12
+Reinforced Bow 3200 19
+Compound Bow 5500 28
+Wood Crossbow 1300 15
+Reiforced Crossbow 3500 21
+Compound Crossbow 6200 31
+Wood Staff 1000 16
+Enchanted Staff 3100 23
+Royal Staff 6000 33
+______________________________________________________
+Armor
+(Price) (Defense Modifier) (Speed Modifier)
+______________________________________________________
+Iron Breastplate 1600 20 -10
+Steel Breastplate 3800 35 -20
+Dragon Breastplate 6400 48 -30
+Leather Chestpiece 1500 15 -6
+Hardened Leather Chestpiece 3600 22 -12 
+Studded Leather Chestpiece 6400 28 -18
+Robes 1500 5 -2
+Enchanted Robes 3900 10 -4 
+Royal Robes 6500 15 -6
+______________________________________________________
+Potions
+(Price) (Heal Amount)
+______________________________________________________
+Basic Health Potion 100 20
+Good Health Potion 500 50
+Superior Health Potion 1000 100
+______________________________________________________
+Battle Tools
+(Price) (Damage)
+______________________________________________________
+Bomb 500 30
+Greater Bomb 1500 80
