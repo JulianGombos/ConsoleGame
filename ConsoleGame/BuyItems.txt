@@ -1,0 +1,25 @@
+W
+Iron Sword
+1000
+10
+W
+Diamond Sword
+12000
+25
+W
+Dragon Sword
+21000
+40
+W
+Iron Spear
+1250
+12
+W
+Iron Axe
+1100
+15
+A
+Iron Breastplate
+1600
+20
+-10
