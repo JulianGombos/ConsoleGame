@@ -42,9 +42,9 @@ int main() {
 	Shop* gameShop = new Shop();
 
 	//********************************************************************
-	gameShop->fillShopItems();
-	gameShop->displayShopItems();
-	Statics::pause();
+	//gameShop->fillShopItems();
+	//gameShop->displayShopItems();
+	//Statics::pause();
 	//********************************************************************
 
 	player = startup();
