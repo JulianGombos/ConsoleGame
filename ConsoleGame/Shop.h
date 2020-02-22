@@ -16,6 +16,8 @@ private:
 	vector<BuyItem*> currentShopItems;
 	vector<BuyItem*>::iterator it;
 
+	string shopTitleNameArray[7];
+
 	void importBuyItems();
 
 public:
@@ -26,5 +28,10 @@ public:
 
 	void fillShopItems();
 	void displayShopItems();
+	void setupShopTitle();
+	void displayShopTitle();
+	void loadShop();
+
+	BuyItem* getBuyItem(int);
 
 };

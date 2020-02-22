@@ -21,4 +21,6 @@ public:
 	int getItemPrice();
 	string getItemName();
 
+	int getAttackModifier();
+
 };

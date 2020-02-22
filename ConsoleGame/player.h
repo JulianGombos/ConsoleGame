@@ -24,6 +24,7 @@ private:
 public:
 
 	Player();
+	Player(Player*);
 	Player(string);
 	Player(string, int); //This can be expanded if more player defined properties are created that are set up in character creation
 	~Player();
@@ -53,6 +54,9 @@ public:
 	const int getDefaultAttack();
 	const int getDefaultDefense();
 	const int getDefaultSpeed();
+
+	//Accessor for player inventory
+	Inventory* getPlayerInventory();
 
 	//Accessor for player class
 	ClassBase* getClass();

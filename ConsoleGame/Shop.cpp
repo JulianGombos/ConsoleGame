@@ -6,6 +6,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <iomanip>
 
 void Shop::importBuyItems()
 {
@@ -67,6 +68,7 @@ void Shop::importBuyItems()
 
 Shop::Shop()
 {
+	setupShopTitle();
 	importBuyItems();
 }
 
@@ -93,6 +95,45 @@ void Shop::displayShopItems()
 	<2> Health Pot 15g      Heals 15 HP
 	*/
 	for (int i = 0; i < 32; i++) {
-		cout << "<" << i+1 << "> " << currentShopItems[i]->getItemName() << "\t" << "Price: " << currentShopItems[i]->getItemPrice() << endl;
+		cout << "<" << i+1 << "> " << setw(20) << left << currentShopItems[i]->getItemName() << "\t" << "Price: " << currentShopItems[i]->getItemPrice() << endl;
 	}
+}
+
+void Shop::setupShopTitle()
+{
+	string fileInput;
+
+	ifstream iFile("ShopTitle.txt");
+
+	if (iFile.is_open())
+	{
+		int i = 0;
+		while (getline(iFile, fileInput))
+		{
+			shopTitleNameArray[i] = fileInput;
+			i++;
+		}
+		iFile.close();
+	}
+	else cout << "Unable to open file: ShopTitle.txt";
+}
+
+void Shop::displayShopTitle()
+{
+	for (int i = 0; i < 7; i++) {
+		cout << shopTitleNameArray[i] << endl;
+	}
+}
+
+void Shop::loadShop()
+{
+	//Function called everytime player gets to the shop. This will load and display the shop
+	//Probably will want to display the items in the player's inventory as well
+	displayShopTitle();
+	displayShopItems();
+}
+
+BuyItem * Shop::getBuyItem(int index)
+{
+	return allBuyItems[index];
 }

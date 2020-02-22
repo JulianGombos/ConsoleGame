@@ -9,6 +9,18 @@ Player::Player()
 	speed = 10;
 }
 
+Player::Player(Player *tempPlayer)
+{
+	this->name = tempPlayer->name;
+	this->health = tempPlayer->health;
+	this->attack = tempPlayer->attack;
+	this->defense = tempPlayer->defense;
+	this->speed = tempPlayer->speed;
+	this->money = tempPlayer->money;
+	this->playerClass = tempPlayer->playerClass;
+	this->playerInventory = tempPlayer->playerInventory;
+}
+
 Player::Player(string tempName)
 {
 	name = tempName;
@@ -16,6 +28,7 @@ Player::Player(string tempName)
 
 Player::Player(string tempName, int classSelection)
 {
+	playerInventory = new Inventory();
 	name = tempName;
 	switch (classSelection) {
 	case 0: {playerClass = new Warrior(); }
@@ -108,6 +121,11 @@ const int Player::getDefaultDefense()
 const int Player::getDefaultSpeed()
 {
 	return DEFAULT_PLAYER_SPEED;
+}
+
+Inventory * Player::getPlayerInventory()
+{
+	return playerInventory;
 }
 
 ClassBase* Player::getClass()

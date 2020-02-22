@@ -26,6 +26,7 @@ public:
 	int getMaxInventorySize();
 	int getCurrentInventorySize();
 	vector<BuyItem*> getInventory();
+	void displayInventory();
 	
 	bool isInventoryFull();
 	bool isInventoryEmpty();

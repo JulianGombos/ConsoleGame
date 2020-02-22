@@ -28,3 +28,8 @@ string Weapon::getItemName()
 {
 	return itemName;
 }
+
+int Weapon::getAttackModifier()
+{
+	return attackModifier;
+}

@@ -1,4 +1,5 @@
 #include "Inventory.h"
+#include <iostream>
 
 Inventory::Inventory()
 {
@@ -25,6 +26,13 @@ vector<BuyItem*> Inventory::getInventory()
 	return playerInventory;
 }
 
+void Inventory::displayInventory()
+{
+	for (int i = 0; i < playerInventory.size(); i++) {
+		cout << "[1] " << playerInventory[i]->getItemName();
+	}
+}
+
 bool Inventory::isInventoryFull()
 {
 	if (this->getCurrentInventorySize() == MAX_INVENTORY_SIZE) {
@@ -47,6 +55,7 @@ bool Inventory::isInventoryEmpty()
 
 void Inventory::addItem(BuyItem* itemToAdd)
 {
+	//This does not work. Creates an access violation
 	playerInventory.push_back(itemToAdd);
 }
 

@@ -43,11 +43,12 @@ int main() {
 
 	//********************************************************************
 	gameShop->fillShopItems();
-	gameShop->displayShopItems();
+	gameShop->loadShop();
 	Statics::pause();
 	//********************************************************************
 
-	player = startup();
+	//player = startup();
+	player = new Player(startup());
 	cout << player->getName() << endl;
 	cout << player->getClassName() << endl;
 	cout << "Default player class health modifier: " << player->getClass()->getHealthModifier() << endl;
