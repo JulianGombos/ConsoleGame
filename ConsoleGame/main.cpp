@@ -113,20 +113,21 @@ Player* characterCreation()
 	string name, classSelection;
 
 	Statics::clearScreen();
-	cout << "Welcome to character creation!\n";
+	cout << "We would like to know some more about you.\n";
 	
 	do {
-		cout << "What is your name?\n" << "Input: ";
+		cout << "Please adventurer, tell us your name?\n" << "Input: ";
 		cin >> name;
 	} while (engine->checkQuit(name));
 	
 	Player* tempPlayer = new Player(name);
+	cout << "That is a fine name!\n";
 
 	bool validClass = false;
 	while (!validClass) {
 
 		do {
-			cout << "\nWhat class would you like to be?\n" << "W = Warrior\nM = Mage\nR = Ranger\n" << "Input: ";
+			cout << "\nAdventurer, what role would you like to train in?\n" << "W = Warrior\nM = Mage\nR = Ranger\n" << "Input: ";
 			cin >> classSelection;
 		} while (engine->checkQuit(classSelection));
 		
@@ -136,6 +137,9 @@ Player* characterCreation()
 			tempPlayer->setClass(0);
 			validClass = true; 
 			break;
+		}
+		case 'R':
+		case 'r': {
 		//Other cases here for other classes when they get made
 		}
 		default: cout << "\nNot a class option\n";

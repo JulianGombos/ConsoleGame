@@ -95,7 +95,7 @@ void Shop::displayShopItems()
 	<2> Health Pot 15g      Heals 15 HP
 	*/
 	for (int i = 0; i < 32; i++) {
-		cout << "<" << i+1 << "> " << setw(20) << left << currentShopItems[i]->getItemName() << "\t" << "Price: " << currentShopItems[i]->getItemPrice() << endl;
+		cout << "<" << i+1 << "> " << setw(20) << left << currentShopItems[i]->getItemName() << "\t" << currentShopItems[i]->getItemPrice() << "g" << endl;
 	}
 }
 
@@ -123,6 +123,7 @@ void Shop::displayShopTitle()
 	for (int i = 0; i < 7; i++) {
 		cout << shopTitleNameArray[i] << endl;
 	}
+	cout << "Name\t\t\t\t" << "Price\t" << "Stat Modifier\n";
 }
 
 void Shop::loadShop()
