@@ -41,18 +41,34 @@ int main() {
 	Player* player;
 	Shop* gameShop = new Shop();
 
-	//********************************************************************
-	gameShop->fillShopItems();
-	gameShop->loadShop();
-	Statics::pause();
-	//********************************************************************
-
 	//player = startup();
 	player = new Player(startup());
 	cout << player->getName() << endl;
 	cout << player->getClassName() << endl;
 	cout << "Default player class health modifier: " << player->getClass()->getHealthModifier() << endl;
 	cout << "Default player health: " << player->getHealth() << endl;
+	cout << "Player money: " << player->getMoney() << "g\n";
+
+	//*******************************************************************
+	//Test player inventory functionality
+	for (int i = 0; i < 16; i++) {
+		player->getPlayerInventory()->addItem(gameShop->getBuyItem(i));
+	}
+	player->getPlayerInventory()->removeItem(7);
+
+	//******************************************************************
+
+	Statics::pause("Press any key to enter the shop...");
+
+	//********************************************************************
+	//Test shop functionality
+	gameShop->fillShopItems();
+	gameShop->loadShop(player);
+	Statics::pause();
+	//********************************************************************
+
+	
+
 	Statics::pause();
 
 	//Main game loop
@@ -149,6 +165,7 @@ Player* characterCreation()
 	tempPlayer->setAttack(tempPlayer->getDefaultAttack() * tempPlayer->getClass()->getAttackModifier());
 	tempPlayer->setDefense(tempPlayer->getDefaultDefense() * tempPlayer->getClass()->getDefenseModifier());
 	tempPlayer->setSpeed(tempPlayer->getDefaultSpeed() * tempPlayer->getClass()->getSpeedModifier());
+	tempPlayer->setMoney(1000);
 	return tempPlayer;
 
 }

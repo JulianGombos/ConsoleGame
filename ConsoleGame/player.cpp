@@ -7,6 +7,7 @@ Player::Player()
 	attack = 10;
 	defense = 10;
 	speed = 10;
+	playerInventory = new Inventory();
 }
 
 Player::Player(Player *tempPlayer)
@@ -24,6 +25,7 @@ Player::Player(Player *tempPlayer)
 Player::Player(string tempName)
 {
 	name = tempName;
+	playerInventory = new Inventory();
 }
 
 Player::Player(string tempName, int classSelection)

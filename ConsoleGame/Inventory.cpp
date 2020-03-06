@@ -28,8 +28,8 @@ vector<BuyItem*> Inventory::getInventory()
 
 void Inventory::displayInventory()
 {
-	for (int i = 0; i < playerInventory.size(); i++) {
-		cout << "[1] " << playerInventory[i]->getItemName();
+	for (int i = 0; i < this->playerInventory.size(); i++) {
+		cout << "[" << i+1 << "] " << this->playerInventory[i]->getItemName() << endl;
 	}
 }
 
@@ -55,23 +55,28 @@ bool Inventory::isInventoryEmpty()
 
 void Inventory::addItem(BuyItem* itemToAdd)
 {
-	//This does not work. Creates an access violation
-	playerInventory.push_back(itemToAdd);
+	if (isInventoryFull()) {
+		cout << "Inventory is full!\n";
+	}
+	else {
+		this->playerInventory.push_back(itemToAdd);
+	}
 }
 
 void Inventory::removeItem(int x)
 {
-	it = playerInventory.begin();
+	it = this->playerInventory.begin();
 	if (x == 1) {
-		playerInventory.erase(playerInventory.begin());
+		this->playerInventory.erase(this->playerInventory.begin());
 	}
 	else if (x == MAX_INVENTORY_SIZE) {
-		playerInventory.pop_back();
+		this->playerInventory.pop_back();
 	}
 	else {
 		for (int i = 0; i < x; i++, it++) {
 			if (i == (x - 1)) {
-				playerInventory.erase(it);
+				this->playerInventory.erase(it);
+				break;
 			}
 		}
 	}

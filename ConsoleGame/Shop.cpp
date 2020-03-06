@@ -3,6 +3,9 @@
 #include "Armor.h"
 #include "Potion.h"
 #include "BattleTools.h"
+#include "player.h"
+#include "StaticsLibrary.h"
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -82,7 +85,7 @@ void Shop::fillShopItems()
 	//Random generator in range for each type of BuyItem
 	//Example: weapons consume indicies 0-10, armour 11-20,...
 	//Shop can have like 10 items total. There could be certain amount of each type filled into the shop.
-	for (int i = 0; i < 32; i++) {
+	for (int i = 0; i < 32; i++) { //The 32 needs to be changed to a const that has the max buyItem size
 		currentShopItems.push_back(allBuyItems[i]);
 	}
 }
@@ -94,8 +97,8 @@ void Shop::displayShopItems()
 	<1> Weapon1    30g      +25 attack
 	<2> Health Pot 15g      Heals 15 HP
 	*/
-	for (int i = 0; i < 32; i++) {
-		cout << "<" << i+1 << "> " << setw(20) << left << currentShopItems[i]->getItemName() << "\t" << currentShopItems[i]->getItemPrice() << "g" << endl;
+	for (int i = 0; i < 32; i++) { //The 32 needs to be changed to a const that has the max buyItem size
+		cout << "[" << i+1 << "] " << setw(20) << left << currentShopItems[i]->getItemName() << "\t" << currentShopItems[i]->getItemPrice() << "g" << endl;
 	}
 }
 
@@ -126,12 +129,15 @@ void Shop::displayShopTitle()
 	cout << "Name\t\t\t\t" << "Price\t" << "Stat Modifier\n";
 }
 
-void Shop::loadShop()
+void Shop::loadShop(Player* player)
 {
 	//Function called everytime player gets to the shop. This will load and display the shop
 	//Probably will want to display the items in the player's inventory as well
+	Statics::clearScreen();
 	displayShopTitle();
 	displayShopItems();
+	cout << "\nPlayer Inventory\n--------------------------------------------------------\n";
+	player->getPlayerInventory()->displayInventory();
 }
 
 BuyItem * Shop::getBuyItem(int index)

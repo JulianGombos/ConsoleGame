@@ -8,8 +8,9 @@ using namespace std;
 class Inventory {
 
 private:
-
-	const int MAX_INVENTORY_SIZE = 15;
+	
+	//Constant integer for the maximum size of a player inventory
+	const int MAX_INVENTORY_SIZE = 10;
 
 	//The vector which represents the inventory will hold type base class for all objects purchasable
 	vector<BuyItem*> playerInventory;

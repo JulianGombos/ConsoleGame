@@ -3,6 +3,7 @@
 #include <random>
 
 #include "BuyItem.h"
+#include "player.h"
 
 using namespace std;
 
@@ -19,6 +20,8 @@ private:
 	string shopTitleNameArray[7];
 
 	void importBuyItems();
+	void displayShopItems();
+	void displayShopTitle();
 
 public:
 
@@ -27,10 +30,8 @@ public:
 	~Shop();
 
 	void fillShopItems();
-	void displayShopItems();
 	void setupShopTitle();
-	void displayShopTitle();
-	void loadShop();
+	void loadShop(Player*);
 
 	BuyItem* getBuyItem(int);
 
