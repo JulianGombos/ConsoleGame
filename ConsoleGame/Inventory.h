@@ -33,6 +33,6 @@ public:
 	bool isInventoryEmpty();
 
 	void addItem(BuyItem*);
-	void removeItem(int); //This will probably change one this functionality is implemented in the shop
+	void removeItem(int); //This will probably change once this functionality is implemented in the shop
 
 };

@@ -30,6 +30,9 @@ void titleScreen();
 //Function that handles character creation setup
 Player* characterCreation();
 
+//Function adds some default items to the player's inventory. Currently those items are based on the warrior class
+void addDefaultGameItems(Player*, Shop*);
+
 //Function displays introduction story
 void intro();
 
@@ -43,35 +46,15 @@ int main() {
 
 	//player = startup();
 	player = new Player(startup());
-	cout << player->getName() << endl;
-	cout << player->getClassName() << endl;
-	cout << "Default player class health modifier: " << player->getClass()->getHealthModifier() << endl;
-	cout << "Default player health: " << player->getHealth() << endl;
-	cout << "Player money: " << player->getMoney() << "g\n";
-
-	//*******************************************************************
-	//Test player inventory functionality
-	for (int i = 0; i < 16; i++) {
-		player->getPlayerInventory()->addItem(gameShop->getBuyItem(i));
-	}
-	player->getPlayerInventory()->removeItem(7);
-
-	//******************************************************************
-
-	Statics::pause("Press any key to enter the shop...");
-
-	//********************************************************************
-	//Test shop functionality
-	gameShop->fillShopItems();
-	gameShop->loadShop(player);
-	Statics::pause();
-	//********************************************************************
+	addDefaultGameItems(player, gameShop);
 
 	
 
 	Statics::pause();
 
 	//Main game loop
+	//Realistically, there probably wont be a game loop. Everything is going to follow a particular order.
+	//The only "game loops" there will be are for battles since combat will constantly loop until its over
 	while (!engine->getQuit()) {
 		
 
@@ -92,7 +75,7 @@ Player* startup()
 {
 	Statics::clearScreen();
 	titleScreen();
-	intro(); //This needs to be cleaned up when the story has been thoughtout
+	intro(); //This needs to be cleaned up when the story has been thought out
 	return characterCreation();
 }
 
@@ -143,7 +126,7 @@ Player* characterCreation()
 	while (!validClass) {
 
 		do {
-			cout << "\nAdventurer, what role would you like to train in?\n" << "W = Warrior\nM = Mage\nR = Ranger\n" << "Input: ";
+			cout << "\nAdventurer, what role would you like to train in?\n" << "W = Warrior\n" << "Input: ";
 			cin >> classSelection;
 		} while (engine->checkQuit(classSelection));
 		
@@ -153,10 +136,6 @@ Player* characterCreation()
 			tempPlayer->setClass(0);
 			validClass = true; 
 			break;
-		}
-		case 'R':
-		case 'r': {
-		//Other cases here for other classes when they get made
 		}
 		default: cout << "\nNot a class option\n";
 		}
@@ -168,6 +147,14 @@ Player* characterCreation()
 	tempPlayer->setMoney(1000);
 	return tempPlayer;
 
+}
+
+void addDefaultGameItems(Player* player, Shop* shop)
+{
+	player->getPlayerInventory()->addItem(shop->getBuyItem(0));
+	player->getPlayerInventory()->addItem(shop->getBuyItem(21));
+	player->getPlayerInventory()->addItem(shop->getBuyItem(27));
+	player->getPlayerInventory()->addItem(shop->getBuyItem(27));
 }
 
 void intro()
