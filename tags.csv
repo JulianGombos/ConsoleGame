@@ -1,279 +1,279 @@
-washer
-dishwasher
-dryer
-refrigerator
-freezer
-space heater
-fan
-humidifier
-dehumidifier
-air purifier
-cooktop
-stove
-oven
-range
-microwave
-toaster
-coffee maker
-mixer
-food processor
-meat grinder
-blender
-juicer
-cooker
-steamer
-fryer
-dehydrator
-slicer
-sink
-countertop
-pans
-pots
-skillets
-braiser
-wok
-baking tray
-jar
-tupperware
-kettle
-pitcher
-jug
-bottle
-tumbler
-storagebox
-cutlery set
-fork
-spoon
-knife
-knives
-whisk
-spatula
-bowls
-plates
-cups
-glass
-mugs
-tray
-charcuterie
-couch
-sofa
-sectional
-loveseat
-futon
-ottoman
-tables
-desks
-cabinet
-bench
-chairs
-stools
-bed set
-bedframe
-mattress
-bed topper
-dressers
-nightstand
-headboard
-blanket
-linen
-duvet
-comforter
-quilt
-pillow
-pillowcase
-bedsheet
-bathrobe
-towel
-bath vanity
-toilet
-bathtub
-showerhead
-hamper
-hand soap
-dish soap
-detergent
-toothpaste
-mouthwash
-sanitizer
-cleaning sponge
-wipes
-towelettes
-rag
-vacuum
-broom
-sweeper
-duster
-mop
-wall paint
-decals
-curtains
-blinds
-mirror
-painting
-candle
-sculpture
-bulb
-led light
-lamp
-chandelier
-carpet
-rug
-hardwood
-laminate
-vinyl
-tile
-grill
-gazebo
-canopy
-pergola
-pool
-hottub
-jacuzzi
-hammock
-swing
-trampoline
-shed
-fence
-seeds
-fertilizer
-flowers
-trees
-hedges
-flashlight
-pliers
-screwdriver
-wrench
-hammer
-chisel
-clamp
-drill
-saw
-sander
-grinder
-lawn mower
-leaf blower
-brush trimmer
-lawn edger
-ladder
-bucket
-toolbox
-smartphone
-headphone
-speaker
-charger
-drone
-game console
-voice recorder
-laptop
-desktop
-mouse
-keyboard
-hard drive
-motherboard
-software
-compact camera
-dslr camera
-mirrorless camera
-router
-nas
-printer
-scanner
-projector
-voip phone
-baby sleeper
-swaddle
-bibs
-diapers
-nursery set
-crib
-bassinet
-baby rocker
-baby bouncer
-pacifier
-teethers
-toys
-car seat
-stroller
-baby carrier
-pet treat
-dog food
-cat food
-fish food
-bird food
-reptile food
-dog bed
-litter box
-bird cage
-aquarium
-terrarium
-pet toys
-feeder
-collar
-leash
-hoops
-cleats
-bats
-racquets
-bike
-scooter
-helmet
-motorcycle
-skateboard
-surfboard
-kayak
-canoe
-boat
-jetski
-paddle
-snowboard
-skis
-treadmill
-elliptical
-steppers
-dumbells
-barbell
-kettlebell
-ab roller
-resistance band
-jump ropes
-foam roller
-puzzle
-chess
-checkers
-scrabble
-jenga
-monopoly
-battleship
-twister
-piano
-guitar
-cello
-flute
-violin
-trumpet
-clarinet
-bass
-saxophone
-drum
-harp
-percussion
-novel
-story
-essay
-literature
-memoir
-poetry
-fiction
-nonfiction
-biography
-autobiography
-scissor
-acrylic
-pastel
-ribbon
-adhesive
-glue
-sticker
-bead
-yarn
+washer,
+dishwasher,
+dryer,
+refrigerator,
+freezer,
+space heater,
+fan,
+humidifier,
+dehumidifier,
+air purifier,
+cooktop,
+stove,
+oven,
+range,
+microwave,
+toaster,
+coffee maker,
+mixer,
+food processor,
+meat grinder,
+blender,
+juicer,
+cooker,
+steamer,
+fryer,
+dehydrator,
+slicer,
+sink,
+countertop,
+pans,
+pots,
+skillets,
+braiser,
+wok,
+baking tray,
+jar,
+tupperware,
+kettle,
+pitcher,
+jug,
+bottle,
+tumbler,
+storagebox,
+cutlery set,
+fork,
+spoon,
+knife,
+knives,
+whisk,
+spatula,
+bowls,
+plates,
+cups,
+glass,
+mugs,
+tray,
+charcuterie,
+couch,
+sofa,
+sectional,
+loveseat,
+futon,
+ottoman,
+tables,
+desks,
+cabinet,
+bench,
+chairs,
+stools,
+bed set,
+bedframe,
+mattress,
+bed topper,
+dressers,
+nightstand,
+headboard,
+blanket,
+linen,
+duvet,
+comforter,
+quilt,
+pillow,
+pillowcase,
+bedsheet,
+bathrobe,
+towel,
+bath vanity,
+toilet,
+bathtub,
+showerhead,
+hamper,
+hand soap,
+dish soap,
+detergent,
+toothpaste,
+mouthwash,
+sanitizer,
+cleaning sponge,
+wipes,
+towelettes,
+rag,
+vacuum,
+broom,
+sweeper,
+duster,
+mop,
+wall paint,
+decals,
+curtains,
+blinds,
+mirror,
+painting,
+candle,
+sculpture,
+bulb,
+led light,
+lamp,
+chandelier,
+carpet,
+rug,
+hardwood,
+laminate,
+vinyl,
+tile,
+grill,
+gazebo,
+canopy,
+pergola,
+pool,
+hottub,
+jacuzzi,
+hammock,
+swing,
+trampoline,
+shed,
+fence,
+seeds,
+fertilizer,
+flowers,
+trees,
+hedges,
+flashlight,
+pliers,
+screwdriver,
+wrench,
+hammer,
+chisel,
+clamp,
+drill,
+saw,
+sander,
+grinder,
+lawn mower,
+leaf blower,
+brush trimmer,
+lawn edger,
+ladder,
+bucket,
+toolbox,
+smartphone,
+headphone,
+speaker,
+charger,
+drone,
+game console,
+voice recorder,
+laptop,
+desktop,
+mouse,
+keyboard,
+hard drive,
+motherboard,
+software,
+compact camera,
+dslr camera,
+mirrorless camera,
+router,
+nas,
+printer,
+scanner,
+projector,
+voip phone,
+baby sleeper,
+swaddle,
+bibs,
+diapers,
+nursery set,
+crib,
+bassinet,
+baby rocker,
+baby bouncer,
+pacifier,
+teethers,
+toys,
+car seat,
+stroller,
+baby carrier,
+pet treat,
+dog food,
+cat food,
+fish food,
+bird food,
+reptile food,
+dog bed,
+litter box,
+bird cage,
+aquarium,
+terrarium,
+pet toys,
+feeder,
+collar,
+leash,
+hoops,
+cleats,
+bats,
+racquets,
+bike,
+scooter,
+helmet,
+motorcycle,
+skateboard,
+surfboard,
+kayak,
+canoe,
+boat,
+jetski,
+paddle,
+snowboard,
+skis,
+treadmill,
+elliptical,
+steppers,
+dumbells,
+barbell,
+kettlebell,
+ab roller,
+resistance band,
+jump ropes,
+foam roller,
+puzzle,
+chess,
+checkers,
+scrabble,
+jenga,
+monopoly,
+battleship,
+twister,
+piano,
+guitar,
+cello,
+flute,
+violin,
+trumpet,
+clarinet,
+bass,
+saxophone,
+drum,
+harp,
+percussion,
+novel,
+story,
+essay,
+literature,
+memoir,
+poetry,
+fiction,
+nonfiction,
+biography,
+autobiography,
+scissor,
+acrylic,
+pastel,
+ribbon,
+adhesive,
+glue,
+sticker,
+bead,
+yarn,
 needle
